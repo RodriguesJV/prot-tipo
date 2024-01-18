@@ -7,54 +7,64 @@ body {
     position: relative;
     width: 100vw;
     background-color:#eee;
-    display: flex;
+    display: grid;
     flex-direction: row;
     align-items: center;
 
 }   
-#ucb_logo{
+#logo_tipo img{
     width: 50px;
     height: 50px;
 }
-#header {
-    width: 70%;
+#header {   
+    background-color: transparent;
+    width: 85%;
     height: 82px;
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
-    
+    margin-top: 20px;
+    justify-self: center;  
 }
+hr{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/*A area abaixo é referente a area da logo*/
+
 #logo_tipo{
     width: auto;
     height: 100%;
     flex-direction: row;
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    justify-content: center;
 }
+
+/*A area abaixo é referente a area de navegacao*/
 #navegacao {
+    background-color: transparent;
     width: auto;
     height: 100%; 
     display: flex;
     flex-direction: row;
     margin-left: auto;
+    align-items: center;
 }
 
 #navegacao ul {
-    width: 100%;
+    width: auto;
+    height: 100%;
     flex-direction: row;
     display: flex;
     align-items: center;
-    text-align: center;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 #navegacao ul li {
     list-style: none;
-    width: auto;
-    height:auto;
-    margin-left: 10px;
-    margin-right: 10x;
+    margin: 20px;
     text-decoration: none;
   
 }
@@ -64,4 +74,79 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
+    background-color: transparent;
+}
+
+#section {
+    width: 85%;
+    height: auto;
+    margin-top: 30px;
+    justify-self: center;
+    display: grid;
+    flex-direction: row;
+    text-align: justify;
+}
+#section p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+#maps {
+    border-radius: 20%;
+}
+#section h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#section iframe {
+    margin-top: 10px;
+    justify-self: center;
+}
+footer{
+    background: linear-gradient(to right, rgb(44, 138, 245) 50%, rgb(32, 33, 145) 50%);
+    margin-top: 50px;
+}
+
+
+#div_logo_footer {   
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#div_logo_footer img{
+    width: 50px;
+    height: 50px;
+}
+#div_redes_sociais_footer {
+    width: 100%;
+    height: auto;
+
+}
+#div_redes_sociais_footer ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+#div_redes_sociais_footer ul img {
+    width: 20px;
+    height: 20px;   
+}
+
+#div_redes_sociais_footer ul li {
+    display: flex;
+    margin: 7px;
+    
+}
+#div_redes_sociais_footer ul li a {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 15px;
 }
